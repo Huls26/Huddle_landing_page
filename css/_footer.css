@@ -1,0 +1,202 @@
+
+/* question card */
+.question-card {
+    border-radius: 15px;
+    background: var(--nc-white);
+    box-shadow: 0px 0px 20px hsla(208, 11%, 55%, .3);
+
+    max-width: 35rem;
+    padding: 2.5em 1.6875em;
+    margin: 0 .75rem ;
+    margin-top: -170px;
+    margin-bottom: -70px;
+    
+    position: relative;
+    z-index: 999;
+    text-align: center;
+}
+
+.question-title {
+    font-family: var(--ff-headings);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--nc-Very-Dark-Cyan);
+    text-shadow: 0px 0px 1px var(--nc-Very-Dark-Cyan);
+
+    margin-bottom: 2rem;
+}
+
+/* media queries */
+
+@media (min-width: 670px) {
+    .question-card {
+        margin-inline: auto;
+    }
+
+    .question-title {
+        font-size: 1.3rem;
+    }
+} 
+
+/* footer */
+
+.footer {
+    background-color: var(--nc-Very-Dark-Cyan);
+    color: var(--nc-Very-Pale-Cyan);
+
+    padding-top: 8.6875rem;
+    padding-bottom: 3.2rem;
+    
+}
+
+/* media query */
+
+@media (min-width: 900px) {
+    .footer {
+        padding-top: 10rem;
+        padding-bottom: 4rem;
+    }
+
+    .split {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contacts-and-location {
+        flex: 1.5;
+    }
+
+    .information {
+        flex: 2;
+    }
+
+    .social-media {
+        flex: 1;
+    }
+}
+
+/* contact and location */
+
+.footer-logo {
+    filter: brightness(0) invert(1);
+    width: 168px;
+    height: 28px;
+    margin-bottom: 1.9375rem;
+}
+
+@media (min-width: 900px) {
+    .footer-logo {
+        margin-bottom: 2.3rem;
+    }
+}
+
+/* contacts and location */
+
+.contacts-and-location div {
+    display: flex;
+    margin-bottom: 33px;
+}
+
+/* media queries */
+
+@media (min-width: 900px ) {
+    .contacts-and-location div {
+        margin-bottom: 25px;
+    }
+}
+
+.contacts-and-location div:last-child {
+    margin-bottom: 67px;   
+}
+
+/* icons */
+
+.location i, 
+.tel-number i, 
+.email i {
+   font-size: 1.6rem;
+   margin-right: 1.2rem;
+}
+
+/* media queries */
+
+@media (min-width: 900px ) {
+    .location i, 
+    .tel-number i, 
+    .email i {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+    .location p {
+        font-size: 1rem;
+        max-width: 330px;
+    }
+}
+
+/* information */
+
+.information {
+    margin-bottom: 60px;
+}
+
+.information h3 {
+    margin-top: 1.6rem;
+}
+
+.information h3:first-child {
+    margin-top: 0;
+}
+
+.information h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* media queries */
+
+@media (min-width: 900px) {
+    .information {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+/* social media */
+
+.social-media {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 143px;
+    max-height: 39.2px; 
+    margin: 0 auto 1.7rem;
+}
+
+.social-media i {
+    position: relative;
+    padding: 9px;
+    border-radius: 50%;
+    border: 1px solid var(--nc-Very-Pale-Cyan);
+}
+
+.social-media i:first-child {
+    padding: 9px 12.6px;
+}
+
+/* copyright */
+
+.copyright {
+    font-size: .8rem;
+    text-align: center;
+}
+
+/* media queries */
+
+@media (min-width: 900px) {
+    .copyright {
+        text-align: right;
+    }
+}
+    

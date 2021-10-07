@@ -1,0 +1,152 @@
+/* header */
+
+header {
+    background: var(--nc-Very-Pale-Cyan);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding-top: 1.625em ;
+    padding-bottom: 2em;
+}
+
+@supports (background-blend-mode: multiply) {
+    header {
+        background-image: url(/images/bg-hero-mobile.svg) ;
+        background-color: var(--nc-Very-Pale-Cyan);
+        background-blend-mode: multiply;
+    }
+} 
+
+/* media queries */
+
+@media screen and (min-width: 800px) {
+    header {
+        padding-top: 3.5625rem;
+        padding-bottom: 4.25rem;
+        background-image: url(/images/bg-hero-desktop.svg);
+    }
+}
+
+/* header navigation */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo {
+    width: 105px;
+    height: 17px;
+}
+
+@media (min-width: 800px) {
+    .nav .logo {
+        width: 170px;
+        height: 28px;
+    }
+}
+
+/* for narrow container in hero main */
+
+.narrow-container {
+    max-width: 300px;
+}
+
+@media (min-width: 600px) {
+    .narrow-container {
+        max-width: 100%;
+        width: min(83rem, calc(100% - 160px));
+    }
+}
+
+/* main hero */
+
+.hero__main {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* media queries */
+
+@media screen and (min-width: 800px) {
+    .hero__main {
+        margin-top: 55px;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* hero text */
+
+.hero__text {
+    text-align: center; 
+    color: var(--nc-Very-Dark-Cyan);
+    font-weight: 400;
+    margin-bottom: 57px;
+}
+
+/* media queries */
+
+@media screen and (min-width: 800px) {
+    .hero__text {
+        text-align: left;
+        padding-right: 4rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .hero__text {
+       flex: 1;
+    }
+}
+
+.hero__text h1 {
+    font-family: var(--ff-headings);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 37px;
+}
+
+/* media queries */
+@media screen and (min-width: 875px) {
+    .hero__text h1 {
+        max-width: 390px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero__text h1 {
+        font-size: 1.89rem;
+        max-width: 390px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+}
+
+.hero__text p {
+    color: #12292F;
+    margin-bottom: 37px;
+}
+
+/* media queries */
+
+@media screen and (min-width: 1000px) {
+    .hero__text p {
+        font-size: .9rem;
+        margin-bottom: 28px;
+    }
+}
+
+
+/* hero image */
+
+/* media queries */
+@media (min-width: 1100px) {
+    .hero__image {
+        flex: 2;
+        max-width: 600px;
+    }
+}

@@ -1,0 +1,13 @@
+:root {
+/* Primary */
+
+--pc-Pink: hsl(322, 100%, 66%);
+
+/* Neutral */
+
+--nc-Very-Pale-Cyan: hsl(193, 100%, 95%);
+--nc-Very-Dark-Cyan: hsl(192, 100%, 9%);
+--nc-Grayish-Blue: hsl(208, 11%, 55%);
+--nc-white: #ffffff;
+}
+
